@@ -15,6 +15,15 @@ namespace firstformapplication
         public Form1()
         {
             InitializeComponent();
+
+            Myname.Enabled = true;
+            Myname.Text = "안녕안녕~~";
+            Myname.Width = 300;
+
+            Button button = new Button();
+            button.Location = new Point(100, 100);
+            Controls.Add(button);
+
         }
     }
 }
