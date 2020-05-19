@@ -20,9 +20,16 @@ namespace firstformapplication
             Myname.Text = "안녕안녕~~";
             Myname.Width = 300;
 
-            Button button = new Button();
-            button.Location = new Point(100, 100);
-            Controls.Add(button);
+            
+
+            for(int i = 0; i < 5; i++)
+            {
+                Button button = new Button();
+                Controls.Add(button);
+                button.Location = new Point(13, 13 + (23 + 3) * i);
+                button.Text = "동적 생성 " + i + "번째";
+                button.Width = 100;
+            }
 
         }
     }
